@@ -8,7 +8,9 @@ import productRoute from './routes/productRoute';
 import orderRoute from './routes/orderRoute';
 import uploadRoute from './routes/uploadRoute';
 
+// const mongodbUrl = 'mongodb://localhost/valazco';
 const mongodbUrl = config.MONGODB_URL;
+
 mongoose
   .connect(mongodbUrl, {
     useNewUrlParser: true,
